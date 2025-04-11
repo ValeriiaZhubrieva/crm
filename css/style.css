@@ -176,7 +176,6 @@ body {
   padding: 1rem;
   background-color: #fff;
   font-weight: 400;
-  font-size: 1.125rem;
   color: var(--black);
   border: 1px solid #fff
 }
@@ -198,8 +197,7 @@ body {
 .small-inputs .input {
   width: 2.625rem;
   padding: .3125rem;
-  text-align: center;
-  font-size: 1.5rem
+  text-align: center
 }
 .btn {
   font-weight: 600;
@@ -285,15 +283,13 @@ body {
   line-height: 1.2
 }
 .header__user-name {
-  font-weight: 400;
-  font-size: 1.125rem
+  font-weight: 400
 }
 .header__user-name:not(:last-child) {
   margin-bottom: .25rem
 }
 .header__user-email {
   font-weight: 400;
-  font-size: 1rem;
   color: #7e7c7c
 }
 .icon-menu {
@@ -360,13 +356,11 @@ body {
 }
 .authorization__num {
   font-weight: 400;
-  font-size: 1.5rem;
   text-transform: uppercase;
   color: var(--black)
 }
 .authorization__subtext {
-  line-height: 1.2;
-  font-size: 1.125rem
+  line-height: 1.2
 }
 .authorization__subtext span {
   font-weight: 600;
@@ -397,6 +391,7 @@ body {
   transition: filter .3s,-webkit-filter .3s
 }
 .aside {
+  flex-shrink: 0;
   display: grid;
   background-color: #fff;
   max-width: 25.0625rem;
@@ -421,8 +416,7 @@ body {
   gap: .75rem;
   padding: 1.25rem .625rem 1.25rem 0;
   position: relative;
-  transition: background .3s;
-  font-size: 1.25rem
+  transition: background .3s
 }
 .menu__link::before {
   content: "";
@@ -465,11 +459,63 @@ body {
   width: auto;
   background-color: #d8d8d8
 }
+@media (min-width:119.99875em) {
+  .input {
+    font-size: 1.125rem
+  }
+  .small-inputs .input {
+    font-size: 1.5rem
+  }
+  .header__user-name {
+    font-size: 1.125rem
+  }
+  .header__user-email {
+    font-size: 1rem
+  }
+  .authorization__error {
+    font-size: 1.0625rem
+  }
+  .authorization__num {
+    font-size: 1.5rem
+  }
+  .authorization__subtext {
+    font-size: 1.125rem
+  }
+  .menu__link {
+    font-size: 1.25rem
+  }
+}
 @media (max-width:95em) {
   .authorization {
     -webkit-column-gap: 1.875rem;
     -moz-column-gap: 1.875rem;
     column-gap: 1.875rem
+  }
+}
+@media (max-width:74.99875em) {
+  .input {
+    font-size: 1rem
+  }
+  .small-inputs .input {
+    font-size: 1rem
+  }
+  .header__user-name {
+    font-size: .9375rem
+  }
+  .header__user-email {
+    font-size: .8125rem
+  }
+  .authorization__error {
+    font-size: .8125rem
+  }
+  .authorization__num {
+    font-size: 1rem
+  }
+  .authorization__subtext {
+    font-size: .9375rem
+  }
+  .menu__link {
+    font-size: .9375rem
   }
 }
 @media (max-width:47.99875em) {
@@ -486,6 +532,32 @@ body {
   }
   .authorization__body {
     padding-left: 1.25rem
+  }
+}
+@media (min-width:74.99875em)and (max-width:119.99875em) {
+  .input {
+    font-size: clamp(1rem ,.7916701389rem + .2777777778vw ,1.125rem)
+  }
+  .small-inputs .input {
+    font-size: clamp(1rem ,.1666805556rem + 1.1111111111vw ,1.5rem)
+  }
+  .header__user-name {
+    font-size: clamp(.9375rem ,.6250052083rem + .4166666667vw ,1.125rem)
+  }
+  .header__user-email {
+    font-size: clamp(.8125rem ,.5000052083rem + .4166666667vw ,1rem)
+  }
+  .authorization__error {
+    font-size: clamp(.8125rem ,.3958402778rem + .5555555556vw ,1.0625rem)
+  }
+  .authorization__num {
+    font-size: clamp(1rem ,.1666805556rem + 1.1111111111vw ,1.5rem)
+  }
+  .authorization__subtext {
+    font-size: clamp(.9375rem ,.6250052083rem + .4166666667vw ,1.125rem)
+  }
+  .menu__link {
+    font-size: clamp(.9375rem ,.4166753472rem + .6944444444vw ,1.25rem)
   }
 }
 @media (any-hover:hover) {
