@@ -285,14 +285,14 @@ body {
 }
 .header__user-name {
   font-weight: 400;
-  font-size: .9375rem
+  font-size: 1.125rem
 }
 .header__user-name:not(:last-child) {
   margin-bottom: .25rem
 }
 .header__user-email {
   font-weight: 400;
-  font-size: .8125rem;
+  font-size: 1rem;
   color: #7e7c7c
 }
 .icon-menu {
@@ -420,7 +420,8 @@ body {
   gap: .75rem;
   padding: 1.25rem .625rem 1.25rem 0;
   position: relative;
-  transition: background .3s
+  transition: background .3s;
+  font-size: 1.25rem
 }
 .menu__link::before {
   content: "";
