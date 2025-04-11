@@ -492,6 +492,17 @@ body {
     column-gap: 1.875rem
   }
 }
+@media (max-width:119.99875em) {
+  .header__logo {
+    max-width: 10.25rem
+  }
+  .aside {
+    min-height: calc(100svh - 4.5625rem)
+  }
+  .menu__link {
+    padding: .75rem .625rem .75rem 0
+  }
+}
 @media (max-width:74.99875em) {
   .input {
     font-size: 1rem
