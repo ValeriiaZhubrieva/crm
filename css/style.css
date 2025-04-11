@@ -176,7 +176,7 @@ body {
   padding: 1rem;
   background-color: #fff;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--black);
   border: 1px solid #fff
 }
@@ -355,7 +355,7 @@ body {
 }
 .authorization__error {
   font-weight: 400;
-  font-size: .875rem;
+  font-size: 1.0625rem;
   color: #d91414
 }
 .authorization__num {
@@ -403,7 +403,7 @@ body {
   width: 100%;
   border-right: 1px solid #d8d8d8;
   padding: 1.25rem 0 1.25rem 1.25rem;
-  min-height: calc(100svh - 4.5625rem)
+  min-height: calc(100svh - 6.4375rem)
 }
 .menu {
   display: grid
