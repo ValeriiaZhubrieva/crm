@@ -245,7 +245,7 @@ body {
   padding-right: 1.25rem
 }
 .header__logo {
-  max-width: 16.875rem;
+  max-width: 15.625rem;
   width: 100%;
   padding: .5rem 0 .5rem 0
 }
@@ -494,14 +494,16 @@ body {
   }
 }
 @media (max-width:119.99875em) {
+  .menu__link {
+    padding: .75rem .625rem .75rem 0
+  }
+}
+@media (max-width:93.74875em) {
   .header__logo {
     max-width: 10.25rem
   }
   .aside {
     min-height: calc(100svh - 4.5625rem)
-  }
-  .menu__link {
-    padding: .75rem .625rem .75rem 0
   }
 }
 @media (max-width:74.99875em) {
