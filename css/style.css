@@ -293,7 +293,7 @@ body {
   margin-top: .75rem;
   background-color: #fff;
   width: 100%;
-  padding: 3.75rem
+  padding: 1.875rem
 }
 .section-head {
   display: flex;
@@ -302,11 +302,11 @@ body {
   flex-wrap: wrap
 }
 .section-head:not(:last-child) {
-  margin-bottom: 2.5rem
+  margin-bottom: 1.25rem
 }
 .section-head__title {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
   color: var(--title-color)
 }
@@ -343,7 +343,7 @@ body {
 }
 .file-block {
   background: var(--light-grey);
-  padding: 2.5rem 3.625rem;
+  padding: 1.5625rem 1.875rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,7 +366,7 @@ body {
   color: var(--grey)
 }
 .file-block__text:not(:last-child) {
-  margin-bottom: 2.5rem
+  margin-bottom: 1.25rem
 }
 .file-block__btn {
   min-height: 2.3125rem;
@@ -393,7 +393,7 @@ body {
   padding-right: 1.25rem
 }
 .header__logo {
-  max-width: 15.625rem;
+  max-width: 10.25rem;
   width: 100%;
   padding: .5rem 0 .5rem 0
 }
@@ -547,7 +547,7 @@ body {
   width: 100%;
   border-right: 1px solid #d8d8d8;
   padding: 1.25rem 0 1.25rem 1.25rem;
-  min-height: calc(100svh - 6.4375rem)
+  min-height: calc(100svh - 4.5625rem)
 }
 .menu {
   display: grid
@@ -633,16 +633,16 @@ body {
   margin-bottom: 1.25rem
 }
 .new-organisation__item:not(:last-child) {
-  margin-bottom: 2.5rem
+  margin-bottom: 1.25rem
 }
 .new-organisation__subtitle {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: var(--title-color)
 }
 .new-organisation__subtitle:not(:last-child) {
-  margin-bottom: 1.75rem
+  margin-bottom: 1rem
 }
 .new-organisation__block {
   display: grid;
@@ -665,7 +665,7 @@ body {
   flex-direction: column
 }
 .new-organisation__field:not(:last-child) {
-  margin-bottom: 1.25rem
+  margin-bottom: .9375rem
 }
 .new-organisation__input {
   height: 3.25rem;
@@ -689,7 +689,7 @@ body {
   background: var(--light-grey)
 }
 .new-organisation__doc {
-  padding: 1rem;
+  padding: .75rem;
   transition: background .3s
 }
 .new-organisation__doc--loading {
@@ -790,14 +790,6 @@ body {
 @media (max-width:119.99875em) {
   .menu__link {
     padding: .75rem .625rem .75rem 0
-  }
-}
-@media (max-width:93.74875em) {
-  .header__logo {
-    max-width: 10.25rem
-  }
-  .aside {
-    min-height: calc(100svh - 4.5625rem)
   }
 }
 @media (max-width:74.99875em) {
