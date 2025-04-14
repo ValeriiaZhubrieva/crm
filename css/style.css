@@ -668,7 +668,7 @@ body {
   margin-bottom: .9375rem
 }
 .new-organisation__input {
-  height: 3.25rem;
+  height: 2.25rem;
   padding: .3125rem .9375rem;
   background: var(--light-grey)
 }
@@ -681,7 +681,7 @@ body {
 .new-organisation__select {
   -webkit-appearance: none;
   appearance: none;
-  height: 3.25rem;
+  height: 2.25rem;
   padding: .3125rem 2.8125rem .3125rem .9375rem;
   background: var(--light-grey) url(../img/arrow-down.svg) center right 16px/19px 19px no-repeat
 }
