@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>Новий Користувач</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250418192829">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body">
+				<div class="header__block">
+					<a href="#" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<a href="#" class="header__user">
+					<div class="header__avatar">
+						<img src="img/avatar.jpg" alt="Image">
+					</div>
+					<div class="header__user-info">
+						<div class="header__user-name">Иванна</div>
+						<div class="header__user-email">IvannaEfremova@gmail.com</div>
+					</div>
+				</a>
+				<button type="button" class="header__burger icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__body">
+				<aside class="aside">
+					<div class="aside__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link active">
+										<img src="img/menu/icon-1.svg" alt="Image">
+										<span>Организации (ГО)</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-2.svg" alt="Image">
+										<span>Пользователи</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-3.svg" alt="Image">
+										<span>Проекты</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-4.svg" alt="Image">
+										<span>Формы</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-5.svg" alt="Image">
+										<span>Лиды и кейсы</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-6.svg" alt="Image">
+										<span>Форма типу “Бенефіціар”</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-7.svg" alt="Image">
+										<span>Семинары / Тренинги</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-8.svg" alt="Image">
+										<span>Аналитика и отчеты</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-9.svg" alt="Image">
+										<span>Логи и сообщения</span>
+									</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">
+										<img src="img/menu/icon-10.svg" alt="Image">
+										<span>Настройки</span>
+									</a>
+								</li>
+							</ul>
+							<div class="menu__bottom">
+								<a href="#" class="menu__link">
+									<img src="img/menu/icon-11.svg" alt="Image">
+									<span>Выйти</span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</aside>
+				<div class="content">
+					<section class="new-user">
+						<div class="new-user__body">
+							<div class="section-head">
+								<a href="#" class="section-head__back">
+									<img src="img/back.svg" alt="back">
+								</a>
+								<h1 class="section-head__title">Новий Користувач</h1>
+							</div>
+							<div data-tabs class="tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active">Інформація</button>
+									<button type="button" class="tabs__title">Курси</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body _tab-active">
+										<div class="form-block">
+											<div class="form-block__columns">
+												<div class="form-block__left">
+													<div class="form-block__label">Фото</div>
+													<div class="form-block__file file-block">
+														<div class="file-block__img">
+															<img src="img/file.svg" alt="Image">
+														</div>
+														<div class="file-block__text">Перетягніть <br> та відпустіть
+														</div>
+														<div class="file-block__bottom">
+															<button type="button" class="file-block__delete">
+																<span class="file-block__delete-icon">
+																	<img src="img/delete.svg" alt="delete">
+																	<img src="img/delete-red.svg" alt="delete">
+																</span>
+																<span>видалити</span>
+															</button>
+															<label class="file-block__btn btn-blue">
+																<input type="file" name="file" class="file-block__input">
+																<span>
+																	загрузити
+																</span>
+															</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-block__right">
+													<div class="form-block__item">
+														<label class="form-block__label">ПІБ українською</label>
+														<div class="form-block__field">
+															<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+														</div>
+													</div>
+													<div class="form-block__item">
+														<label class="form-block__label">ПІБ англійською</label>
+														<div class="form-block__field">
+															<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+														</div>
+													</div>
+													<div class="form-block__3-cols">
+														<div class="form-block__item">
+															<label class="form-block__label">Дата народження</label>
+															<div class="form-block__field form-block__field--icon">
+																<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
+																<img class="form-block__icon" src="img/calendar.svg" alt="calendar">
+															</div>
+														</div>
+														<div class="form-block__item">
+															<label class="form-block__label">Розмір футболки</label>
+															<div class="form-block__field">
+																<select name="size-1" class="form-block__select">
+																	<option value="" selected>Оберіть розмір</option>
+																	<option value="1">53</option>
+																	<option value="2">55</option>
+																	<option value="3">57</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-block__item">
+															<label class="form-block__label">Розмір пайти</label>
+															<div class="form-block__field">
+																<select name="size-2" class="form-block__select">
+																	<option value="" selected>Оберіть розмір</option>
+																	<option value="1">53</option>
+																	<option value="2">55</option>
+																	<option value="3">57</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="form-block__item">
+														<label class="form-block__label">Резюме</label>
+														<div class="form-block__document">
+															<div class="form-block__document-info">
+																<a href="#" class="form-block__document-name">Договір
+																	щодо
+																	оренди</a>
+																<button type="button" class="form-block__document-delete">
+																	<img src="img/delete.svg" alt="delete">
+																	<img src="img/delete-red.svg" alt="delete red">
+																</button>
+															</div>
+															<div class="form-block__document-load">
+																<label class="form-block__document-btn btn-blue">
+																	<input type="file" name="file" class="file-block__input">
+																	<span>
+																		загрузити
+																	</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-block__item">
+														<label class="form-block__label">Ролі</label>
+														<div class="form-block__field">
+															<select name="role" class="form-block__select">
+																<option value="" selected>Оберіть роль</option>
+																<option value="1">Pоль 1</option>
+																<option value="2">Pоль 2</option>
+																<option value="3">Pоль 3</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__body">
+										<div class="form-block">
+											<div class="form-block__2-cols">
+												<div class="form-block__item">
+													<label class="form-block__label">Назва курсу</label>
+													<div class="form-block__field">
+														<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+													</div>
+												</div>
+												<div class="form-block__item">
+													<label class="form-block__label">Посилання на сайт</label>
+													<div class="form-block__field">
+														<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+													</div>
+												</div>
+												<div class="form-block__item">
+													<label class="form-block__label">Відмітка про проходження</label>
+													<div class="form-block__field">
+														<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+													</div>
+												</div>
+												<div class="form-block__item">
+													<label class="form-block__label">Дата проходження</label>
+													<div class="form-block__field form-block__field--icon">
+														<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
+														<img class="form-block__icon" src="img/calendar.svg" alt="calendar">
+													</div>
+												</div>
+											</div>
+											<div class="form-block__item">
+												<label class="form-block__label">Сертифікат</label>
+												<div class="form-block__document">
+													<div class="form-block__document-info">
+														<a href="#" class="form-block__document-name">Діплом</a>
+														<button type="button" class="form-block__document-delete">
+															<img src="img/delete.svg" alt="delete">
+															<img src="img/delete-red.svg" alt="delete red">
+														</button>
+													</div>
+													<div class="form-block__document-load">
+														<label class="form-block__document-btn btn-blue">
+															<input type="file" name="file" class="file-block__input">
+															<span>
+																загрузити
+															</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" class="form-block__add">
+											<img src="img/plus-blue.svg" alt="plus">
+											<span>додати курс</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="new-user__buttons">
+								<button type="button" class="new-user__btn btn-white">Відміна</button>
+								<button type="button" class="new-user__btn btn">Зберегти</button>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250418192829"></script>
+</body>
+
+</html>

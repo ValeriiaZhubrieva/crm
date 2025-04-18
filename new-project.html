@@ -2,7 +2,7 @@
 <html lang="uk">
 
 <head>
-	<title>Нова организація</title>
+	<title>Новий проект</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -114,7 +114,7 @@
 								<a href="#" class="section-head__back">
 									<img src="img/back.svg" alt="back">
 								</a>
-								<h1 class="section-head__title">Нова организація</h1>
+								<h1 class="section-head__title">Новий проект</h1>
 							</div>
 							<div class="new-organisation__item">
 								<div class="new-organisation__subtitle">Інформація</div>
@@ -122,9 +122,9 @@
 									<div class="form-block__columns">
 										<div class="form-block__left">
 											<div class="form-block__label">Лого</div>
-											<div class="form-block__file file-block file-block--load">
+											<div class="form-block__file file-block">
 												<div class="file-block__img">
-													<img src="img/organizations/image-1.png" alt="Image">
+													<img src="img/file.svg" alt="Image">
 												</div>
 												<div class="file-block__text">Перетягніть <br> та відпустіть</div>
 												<div class="file-block__bottom">
@@ -152,87 +152,81 @@
 												</div>
 											</div>
 											<div class="form-block__item">
+												<label class="form-block__label">Категорія допомоги</label>
+												<div class="form-block__field">
+													<select name="category" class="form-block__select">
+														<option value="" selected>Оберіть категорію та подкатегорію
+														</option>
+														<option value="1">Категорія 1</option>
+														<option value="2">Категорія 2</option>
+														<option value="3">Категорія 3</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-block__item">
 												<label class="form-block__label">Опис</label>
 												<div class="form-block__field">
 													<textarea name="description" class="form-block__textarea"></textarea>
 												</div>
 											</div>
 											<div class="form-block__item">
-												<label class="form-block__label">Адмін</label>
+												<label class="form-block__label">Тип проекта</label>
 												<div class="form-block__field">
-													<select name="number" class="form-block__select">
-														<option value="1" selected>+38 ( _ _ _ ) _ _ _ - _ _ - _ _
-														</option>
-														<option value="2">+38 ( 0 9 5 ) _ _ _ - _ _ - _ _ </option>
-														<option value="3">+38 ( 0 6 7 ) _ _ _ - _ _ - _ _</option>
-														<option value="4">+38 ( 0 9 3 ) _ _ _ - _ _ - _ _</option>
+													<select name="type" class="form-block__select">
+														<option value="" selected>Оберіть тип прокту</option>
+														<option value="1">тип 1</option>
+														<option value="2">тип 2</option>
+														<option value="3">тип 3</option>
 													</select>
 												</div>
 											</div>
 											<div class="form-block__item">
-												<label class="form-block__label">ЄДРПОУ</label>
-												<div class="form-block__field">
-													<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+												<label class="form-block__label">Дата</label>
+												<div class="form-block__field form-block__field--icon">
+													<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
+													<img class="form-block__icon" src="img/calendar.svg" alt="calendar">
 												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="new-organisation__item">
-								<div class="new-organisation__subtitle">Документи</div>
-								<div class="form-block">
-									<div class="form-block__columns">
-										<div class="form-block__left">
-											<div class="form-block__file file-block">
-												<div class="file-block__img">
-													<img src="img/file.svg" alt="Image">
+											<div class="form-block__2-cols">
+												<div class="form-block__item">
+													<label class="form-block__label">Дата</label>
+													<div class="form-block__field form-block__field--icon">
+														<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
+														<img class="form-block__icon" src="img/calendar.svg" alt="calendar">
+													</div>
 												</div>
-												<div class="file-block__text">Перетягніть <br> та відпустіть</div>
-												<div class="file-block__bottom">
-													<button type="button" class="file-block__delete">
-														<span class="file-block__delete-icon">
-															<img src="img/delete.svg" alt="delete">
-															<img src="img/delete-red.svg" alt="delete">
-														</span>
-														<span>видалити</span>
+												<div class="form-block__item">
+													<label class="form-block__label">Дата</label>
+													<div class="form-block__field form-block__field--icon">
+														<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
+														<img class="form-block__icon" src="img/calendar.svg" alt="calendar">
+													</div>
+												</div>
+											</div>
+											<div class="form-block__item">
+												<label class="form-block__label more-info">
+													<span class="more-info__text">
+														Статусі
+													</span>
+													<span class="more-info__block">
+														Це внутрішня CRM-система для громадських організацій, яка
+														допомагає зручно, безпечно та структуровано працювати з даними
+														людей, яким надається допомога (бенефіціарів)
+													</span>
+												</label>
+												<div class="form-block___line">
+													<div class="form-block__field">
+														<select name="status" class="form-block__select">
+															<option value="" selected>Укажіть</option>
+															<option value="1">Status 1</option>
+															<option value="2">Status 2</option>
+															<option value="3">Status 3</option>
+														</select>
+													</div>
+													<button type="button" class="form-block__add">
+														<img src="img/plus-blue.svg" alt="plus">
+														<span>додати статус</span>
 													</button>
-													<label class="file-block__btn btn-blue">
-														<input type="file" name="file" class="file-block__input">
-														<span>
-															загрузити
-														</span>
-													</label>
-												</div>
-											</div>
-										</div>
-										<div class="form-block__right">
-											<div class="form-block__doc">
-												<div class="form-block__doc-info">
-													<a href="#" class="form-block__doc-name">Договір щодо
-														оренди</a>
-													<button type="button" class="form-block__doc-delete">
-														<img src="img/delete.svg" alt="delete">
-														<img src="img/delete-red.svg" alt="delete red">
-													</button>
-												</div>
-											</div>
-											<div class="form-block__doc">
-												<div class="form-block__doc-info">
-													<a href="#" class="form-block__doc-name">Звіт за І квартал</a>
-													<button type="button" class="form-block__doc-delete">
-														<img src="img/delete.svg" alt="delete">
-														<img src="img/delete-red.svg" alt="delete red">
-													</button>
-												</div>
-											</div>
-											<div class="form-block__doc form-block__doc--loading">
-												<div class="form-block__doc-info">
-													<a href="#" class="form-block__doc-name">Договір щодо
-														оренди</a>
-												</div>
-												<div class="form-block__doc-progress">
-													<span style="width: 50%;"></span>
 												</div>
 											</div>
 										</div>
