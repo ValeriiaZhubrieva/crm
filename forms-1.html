@@ -2,7 +2,7 @@
 <html lang="uk">
 
 <head>
-	<title>Главная</title>
+	<title>Форма - 1</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -112,100 +112,58 @@
 					</div>
 				</aside>
 				<div class="content">
-					<nav class="categories">
-						<ul class="categories__list">
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/document.svg" alt="Image">
+					<section class="new-forms">
+						<div class="section-head">
+							<a href="#" class="section-head__back">
+								<img src="img/back.svg" alt="back">
+							</a>
+							<h1 class="section-head__title">Нова форма</h1>
+							<button type="button" class="section-head__btn btn-blue">
+								<img src="img/plus-blue.svg" alt="plus">
+								<span>Додати таби</span>
+							</button>
+						</div>
+						<div class="new-forms__body">
+							<div class="new-forms__items">
+								<div class="new-forms__row">
+									<div class="new-forms__row-body">
+										<div class="form-block">
+											<div class="form-block__2-cols">
+												<div class="form-block__item">
+													<label class="form-block__label">Лейбл</label>
+													<div class="form-block__field">
+														<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
+													</div>
+												</div>
+												<div class="form-block__item">
+													<label class="form-block__label">Тип форми</label>
+													<div class="form-block__field">
+														<select name="form-type" class="form-block__select">
+															<option value="" selected>Оберіть тип форми</option>
+															<option value="1">Чекбокс ( декілька варінтів )</option>
+															<option value="2">Список</option>
+															<option value="3">Радіо ( один варінт )</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="categories__name">
-										проекти
+									<div class="new-forms__row-drag">
+										<img src="img/drag.svg" alt="Image">
 									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/filter.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										ліди
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/new-employee.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										моЇ "люди"
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/calendar.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										календар
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/work.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										Працівники
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/add-task.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										форми
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/notification.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										Повідомлення
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/cloud-download.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										експорт даних
-									</div>
-								</a>
-							</li>
-							<li class="categories__item">
-								<a href="#" class="categories__link">
-									<div class="categories__img">
-										<img src="img/categories/data.svg" alt="Image">
-									</div>
-									<div class="categories__name">
-										Звіти
-									</div>
-								</a>
-							</li>
-						</ul>
-					</nav>
+								</div>
+							</div>
+							<button type="button" class="form-block__add">
+								<img src="img/plus-blue.svg" alt="plus">
+								<span>додати форму</span>
+							</button>
+						</div>
+						<div class="new-forms__buttons">
+							<button type="button" class="new-forms__btn btn-white">Відміна</button>
+							<button type="button" class="new-forms__btn btn">Зберегти</button>
+						</div>
+					</section>
 				</div>
 			</div>
 		</main>
