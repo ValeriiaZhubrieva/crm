@@ -1313,6 +1313,61 @@ body::after {
   grid-template-columns: repeat(auto-fit,minmax(12.5rem,1fr));
   gap: 1rem
 }
+.popup__descr:not(:last-child) {
+  margin-bottom: 2.5rem
+}
+.popup__descr-body {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem
+}
+.popup__descr-body:not(:last-child) {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #dbdbdb
+}
+.popup__descr-item {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: .75rem
+}
+.popup__descr-term {
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 160%;
+  color: var(--dark-grey)
+}
+.popup__descr-val {
+  font-size: .9375rem;
+  line-height: 160%;
+  color: var(--black)
+}
+.popup__descr-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: .9375rem
+}
+.popup__descr-row {
+  display: flex;
+  align-items: center;
+  gap: 12px
+}
+.popup__descr-row>*:not(:last-child) {
+  display: flex;
+  align-items: center;
+  gap: .75rem
+}
+.popup__descr-row>*:not(:last-child)::after {
+  content: "|";
+  font-weight: 400;
+  font-size: .9375rem;
+  line-height: 160%;
+  color: var(--grey)
+}
+.popup__descr-row .popup__descr-term {
+  font-size: .9375rem;
+  color: var(--black)
+}
 .tabs__navigation {
   display: flex;
   flex-wrap: wrap;
@@ -1659,7 +1714,7 @@ body::after {
   top: 0;
   left: -1.25rem;
   right: 0;
-  z-index: 2;
+  z-index: 6;
   height: .0625rem;
   width: auto;
   background-color: #d8d8d8
