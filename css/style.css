@@ -1268,6 +1268,18 @@ body::after {
 .lock .popup__content {
   visibility: visible
 }
+.popup__body--center {
+  text-align: center
+}
+.popup__icon {
+  max-width: 6.75rem;
+  margin: 0 auto 2.5rem auto
+}
+.popup__icon img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover
+}
 .popup__title:not(:last-child) {
   margin-bottom: 1.25rem
 }
@@ -1287,6 +1299,9 @@ body::after {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 1.25rem
+}
+.popup__body--center .popup__btns {
+  justify-content: center
 }
 .popup__info {
   font-size: .9375rem;
@@ -2233,10 +2248,27 @@ body::after {
   object-fit: contain
 }
 .add-user {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem
+  gap: 1.25rem;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s,-webkit-transform .3s
+}
+.add-user.popup_show {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  pointer-events: all;
+  z-index: 150
 }
 .add-user__top {
   position: sticky;
