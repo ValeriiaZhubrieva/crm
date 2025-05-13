@@ -568,6 +568,14 @@ body {
 .file-block--load .file-block__img:not(:last-child) {
   margin-bottom: 1.25rem
 }
+.file-block__name-file {
+  border: 1px solid #efefef;
+  padding: 1.25rem .9375rem;
+  text-align: left
+}
+.file-block__name-file:not(:last-child) {
+  margin-bottom: 1.25rem
+}
 .file-block__text {
   font-weight: 600;
   font-size: .875rem;
