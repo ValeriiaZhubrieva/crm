@@ -1126,6 +1126,12 @@ body {
   line-height: 120%;
   color: var(--black)
 }
+.checkbox__text a {
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: underline;
+  transition: color .3s
+}
 .option-radio {
   position: relative;
   cursor: pointer;
@@ -1942,6 +1948,11 @@ body::after {
   background-color: #fff;
   box-shadow: 0 26px 50px 0 rgba(0,0,0,.1)
 }
+.new-user__inner {
+  max-width: 61.375rem;
+  width: 100%;
+  margin: 0 auto
+}
 .new-user__body .tabs:not(:last-child) {
   margin-bottom: 2.5rem
 }
@@ -2042,43 +2053,62 @@ body::after {
 .project__info-text.red-color {
   color: var(--accent-red)
 }
-.project__info-btns {
+.block-info {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem
 }
-.project__info-btn {
-  --padding-size: 1.25rem;
+.block-info__item {
   max-width: 15.3125rem;
   min-height: 5.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
   width: 100%;
   border: 1px solid #dbdbdb;
-  padding: var(--padding-size);
+  padding: 1.25rem .9375rem;
   font-weight: 500;
   font-size: 1.125rem;
-  line-height: 144%;
-  background-color: #fff;
-  position: relative
+  line-height: 120%;
+  background-color: #fff
 }
-.project__info-btn img {
-  position: absolute;
-  right: 1.25rem;
-  bottom: 0;
+.block-info__item-bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem
+}
+.block-info__type {
+  font-size: .875rem;
+  line-height: 110%;
+  color: var(--blue)
+}
+.block-info__btns {
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+.block-info__btn {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: .125rem;
+  display: grid;
+  place-content: center;
+  grid-template-areas: "icon";
+  transition: opacity .3s
+}
+.block-info__btn img {
+  grid-area: icon;
   width: 1.125rem;
   height: 1.125rem;
   -o-object-fit: contain;
   object-fit: contain;
-  opacity: 0
+  transition: opacity .3s
 }
-.project__info-btn::after {
-  content: "";
-  position: absolute;
-  left: -.03125rem;
-  right: -.03125rem;
-  top: 100%;
-  background-color: #fff;
-  box-shadow: 0 40px 50px 0 rgba(0,0,0,.1);
-  height: 1.25rem;
+.block-info__btn img:last-child {
   opacity: 0
 }
 .category-inner__blocks {
@@ -2370,6 +2400,9 @@ body::after {
   -o-object-fit: contain;
   object-fit: contain
 }
+.forms-info {
+  display: grid
+}
 .forms-info__head {
   display: flex;
   align-items: center;
@@ -2387,19 +2420,38 @@ body::after {
 }
 .forms-info__table {
   display: grid;
-  grid-template-columns: repeat(8,1fr);
+  gap: .125rem;
+  overflow: auto
+}
+.forms-info__table tbody {
+  display: grid;
   gap: .125rem
+}
+.forms-info__table-head .forms-info__table-item {
+  background-color: #d8d8d8;
+  color: var(--title-color)
+}
+.forms-info__table-row {
+  display: grid;
+  grid-template-columns: repeat(8,minmax(7.5rem,1fr));
+  gap: .125rem
+}
+.forms-info__table-row th {
+  text-align: left;
+  font-weight: 700
 }
 .forms-info__table-item {
   background-color: var(--light-grey);
   padding: .75rem 1rem;
   font-weight: 400;
   font-size: 1rem;
+  line-height: 120%;
   color: var(--grey);
   min-height: 2.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap
+  white-space: nowrap;
+  word-break: break-word
 }
 .new-forms__head {
   display: flex;
@@ -3142,6 +3194,10 @@ body::after {
   .form-block__delete:hover img:last-child {
     opacity: 1
   }
+  .checkbox__text a:hover {
+    text-decoration: none;
+    color: var(--grey)
+  }
   .pagging__arrow:hover {
     background-color: rgba(0,0,0,0);
     border-color: #dbdbdb
@@ -3190,15 +3246,14 @@ body::after {
   .user-card__btn:hover img:last-child {
     opacity: 1
   }
-  .project__info-btn:hover {
+  .block-info__item:hover {
     box-shadow: 0 9px 50px 0 rgba(0,0,0,.1);
-    border-color: #fff;
-    z-index: 3
+    border-color: #fff
   }
-  .project__info-btn:hover img {
-    opacity: 1
+  .block-info__btn:hover img:first-child {
+    opacity: 0
   }
-  .project__info-btn:hover::after {
+  .block-info__btn:hover img:last-child {
     opacity: 1
   }
   .category-block__add-btn:hover {
