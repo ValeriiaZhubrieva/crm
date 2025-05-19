@@ -365,6 +365,9 @@ body {
   color: #44cc52;
   pointer-events: none
 }
+.page {
+  display: grid
+}
 .page__body {
   display: flex;
   align-items: flex-start;
@@ -375,8 +378,7 @@ body {
   margin-top: .75rem;
   background-color: #fff;
   width: 100%;
-  padding: 1.875rem 1.875rem 3.75rem 1.875rem;
-  display: grid
+  padding: 1.875rem 1.875rem 3.75rem 1.875rem
 }
 .title {
   font-weight: 700;
