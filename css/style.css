@@ -2191,8 +2191,16 @@ body::after {
   gap: 12px;
   padding: .75rem 3.375rem .75rem .9375rem
 }
+.category-block__item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem
+}
 .category-block__item strong {
   font-weight: 600
+}
+.category-block__item .category-block__actions {
+  gap: .625rem
 }
 .category-block__add {
   display: flex;
