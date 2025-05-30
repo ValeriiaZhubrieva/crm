@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250508122151">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250530172300">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -227,19 +227,73 @@
 									</div>
 									<div class="tabs__body">
 										<div class="project__info">
-											<div class="project__info-btns">
-												<a href="#" class="project__info-btn">
-													<span>Анкета</span>
-													<img src="img/next-arrow.svg" alt="Image">
-												</a>
-												<a href="#" class="project__info-btn">
+											<div class="project__info-forms block-info">
+												<div class="block-info__item">
+													<span>Персональна інформація</span>
+													<div class="block-info__item-bottom">
+														<div class="block-info__type">
+															Тип Форми
+														</div>
+														<div class="block-info__btns">
+															<a href="#" class="block-info__btn">
+																<img src="img/handle.svg" alt="Image">
+																<img src="img/handle-blue.svg" alt="Image">
+															</a>
+															<a href="#" class="block-info__btn">
+																<img src="img/eye.svg" alt="Image">
+																<img src="img/eye-blue.svg" alt="Image">
+															</a>
+															<a href="#" class="block-info__btn">
+																<img src="img/delete.svg" alt="Image">
+																<img src="img/delete-red.svg" alt="Image">
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="block-info__item">
 													<span>Заява</span>
-													<img src="img/next-arrow.svg" alt="Image">
-												</a>
-												<a href="#" class="project__info-btn">
+													<div class="block-info__item-bottom">
+														<div class="block-info__type">
+															Тип Форми
+														</div>
+														<div class="block-info__btns">
+															<a href="#" class="block-info__btn">
+																<img src="img/handle.svg" alt="Image">
+																<img src="img/handle-blue.svg" alt="Image">
+															</a>
+															<a href="#" class="block-info__btn">
+																<img src="img/eye.svg" alt="Image">
+																<img src="img/eye-blue.svg" alt="Image">
+															</a>
+															<a href="#" class="block-info__btn">
+																<img src="img/delete.svg" alt="Image">
+																<img src="img/delete-red.svg" alt="Image">
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="block-info__item">
 													<span>Форма 125</span>
-													<img src="img/next-arrow.svg" alt="Image">
-												</a>
+													<div class="block-info__item-bottom">
+														<div class="block-info__type">
+															Тип Форми
+														</div>
+														<div class="block-info__btns">
+															<a href="#" class="block-info__btn">
+																<img src="img/handle.svg" alt="Image">
+																<img src="img/handle-blue.svg" alt="Image">
+															</a>
+															<a href="#" class="block-info__btn">
+																<img src="img/eye.svg" alt="Image">
+																<img src="img/eye-blue.svg" alt="Image">
+															</a>
+															<a href="#" class="block-info__btn">
+																<img src="img/delete.svg" alt="Image">
+																<img src="img/delete-red.svg" alt="Image">
+															</a>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -517,13 +571,20 @@
 														<span>Этап 1</span>
 														<img src="img/cross.svg" alt="delete">
 													</button>
-													<button type="button" class="status-block__tag">
+													<button type="button" class="status-block__tag last-tag">
 														<span>Статус 2</span>
 														<img src="img/cross.svg" alt="delete">
 													</button>
 												</div>
 												<div class="status-block__add">
 													<input autocomplete="off" type="text" name="status" placeholder="Додайте статус" class="status-block__input">
+													<label class="checkbox">
+														<input class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<span class="checkbox__label"></span>
+														<span class="checkbox__text">
+															Цей статус фінальний?
+														</span>
+													</label>
 													<div class="status-block__add-btns">
 														<button type="button" class="status-block__add-btn">
 															<img src="img/cross.svg" alt="close">
@@ -577,7 +638,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250508122151"></script>
+	<script src="js/app.min.js?_v=20250530172300"></script>
 </body>
 
 </html>

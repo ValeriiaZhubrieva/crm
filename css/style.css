@@ -2271,12 +2271,24 @@ body::after {
   -o-object-fit: contain;
   object-fit: contain
 }
+.status-block__tag.last-tag::before {
+  content: "";
+  width: .9375rem;
+  height: .9375rem;
+  border-radius: 50%;
+  background-color: var(--green)
+}
 .status-block__add {
-  position: relative
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem
 }
 .status-block__input {
+  max-width: 50%;
+  flex: 1 1 auto;
   height: 2.25rem;
-  padding: .3125rem 4.6875rem .3125rem .9375rem;
+  padding: .3125rem .9375rem;
   background: var(--light-grey);
   border: 1px solid var(--light-grey)
 }
@@ -2296,11 +2308,6 @@ body::after {
   background-color: #fff
 }
 .status-block__add-btns {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  -webkit-transform: translate(0,-50%);
-  transform: translate(0,-50%);
   display: flex;
   align-items: center;
   gap: .625rem
