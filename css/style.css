@@ -1066,7 +1066,7 @@ body {
   grid-template-columns: repeat(2,1fr);
   gap: 1.25rem
 }
-.form-block__new-options>*:not(.form-block__new-option) {
+.form-block__new-options>*:not(.form-block__new-option,.form-block__new-info) {
   grid-column: 1/-1
 }
 .form-block__new-option {
@@ -1080,6 +1080,10 @@ body {
   width: 1.3125rem;
   height: 1.3125rem
 }
+.form-block__new-info {
+  display: flex;
+  align-items: center
+}
 .form-block__new-option-var {
   display: grid;
   place-content: center;
@@ -1087,13 +1091,15 @@ body {
   font-size: .9375rem;
   line-height: 160%
 }
-.form-block__delete {
+.form-block__delete,
+.form-block__edit {
   display: grid;
   grid-template-areas: "icon";
   width: 1.125rem;
   height: 1.125rem
 }
-.form-block__delete img {
+.form-block__delete img,
+.form-block__edit img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -1102,7 +1108,8 @@ body {
   grid-area: icon;
   transition: opacity .3s
 }
-.form-block__delete img:last-child {
+.form-block__delete img:last-child,
+.form-block__edit img:last-child {
   opacity: 0
 }
 .form-block__new-options-settings {
@@ -1425,7 +1432,8 @@ body::after {
 .tabs__navigation {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.25rem
+  margin-bottom: 2.5rem;
+  box-shadow: 0 30px 50px 0 rgba(219,219,219,.3)
 }
 .tabs__title {
   flex: 1 1 auto;
@@ -3650,10 +3658,12 @@ body::after {
     -webkit-filter: grayscale(1) brightness(2);
     filter: grayscale(1) brightness(2)
   }
-  .form-block__delete:hover img:first-child {
+  .form-block__delete:hover img:first-child,
+  .form-block__edit:hover img:first-child {
     opacity: 0
   }
-  .form-block__delete:hover img:last-child {
+  .form-block__delete:hover img:last-child,
+  .form-block__edit:hover img:last-child {
     opacity: 1
   }
   .checkbox__text a:hover {
