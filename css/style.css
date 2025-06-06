@@ -1118,6 +1118,11 @@ body {
   flex-wrap: wrap;
   gap: 1.25rem 2.5rem
 }
+.form-block__item-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px
+}
 .checkbox {
   position: relative;
   cursor: pointer;
@@ -2694,6 +2699,9 @@ body::after {
   gap: .5rem;
   margin-bottom: 1.25rem
 }
+.calendar__events .form-block__field {
+  flex: none
+}
 .calendar__events-title {
   font-weight: 600;
   font-size: .875rem;
@@ -2914,6 +2922,11 @@ body::after {
   left: auto;
   right: 100%
 }
+.calendar-month__item:hover .calendar-month__add {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all
+}
 .calendar-month__date {
   min-height: 1.5625rem;
   font-weight: 600;
@@ -2924,6 +2937,9 @@ body::after {
   align-items: center;
   justify-content: center;
   text-align: center
+}
+.calendar-month__item-body {
+  height: 100%
 }
 .calendar-month__events {
   display: flex;
@@ -3034,6 +3050,15 @@ body::after {
 .calendar-month__events-more {
   flex-direction: column;
   gap: .0625rem
+}
+.calendar-month__add {
+  padding: .5rem 1rem;
+  min-height: 1.875rem;
+  max-width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  order: 1
 }
 .help-category__body {
   display: flex;
@@ -3536,6 +3561,9 @@ body::after {
   }
 }
 @media (max-width:47.99875em) {
+  .popup__content {
+    padding: 1.875rem 1.25rem
+  }
   .authorization {
     grid-template-columns: 1fr 2fr
   }
