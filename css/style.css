@@ -690,10 +690,15 @@ body {
   gap: .375rem;
   font-weight: 600;
   font-size: .6875rem;
-  line-height: 120%;
+  line-height: 110%;
   text-transform: uppercase;
   color: var(--dark-grey);
   transition: color .3s
+}
+.form-block__new-options-settings .actions-block__btn {
+  font-weight: 400;
+  font-size: .8125rem;
+  color: var(--black)
 }
 .actions-block__show {
   color: var(--blue)
@@ -734,6 +739,10 @@ body {
 }
 .actions-block__btn-icon img:last-child {
   opacity: 0
+}
+.form-block__new-options-settings .actions-block__btn-icon img {
+  width: 1.125rem;
+  height: 1.125rem
 }
 .form-block {
   display: grid;
