@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250508122151">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250612122600">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -240,14 +240,15 @@
 											<div class="form-block__2-cols">
 												<div class="form-block__item">
 													<label class="form-block__label">Назва курсу</label>
-													<div class="form-block__field">
-														<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+													<div class="form-block__body">
+														<div class="form-block__num">3</div>
+														<button type="button" class="form-block__btn btn-blue">Змінити</button>
 													</div>
 												</div>
 												<div class="form-block__item">
 													<label class="form-block__label">Посилання на сайт</label>
-													<div class="form-block__field">
-														<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+													<div class="form-block__body">
+														<a href="#" class="form-block__link">Посилання</a>
 													</div>
 												</div>
 												<div class="form-block__item">
@@ -261,6 +262,13 @@
 													<div class="form-block__field form-block__field--icon">
 														<input autocomplete="off" type="text" name="date" placeholder="" class="form-block__input">
 														<img class="form-block__icon" src="img/calendar.svg" alt="calendar">
+													</div>
+												</div>
+												<div class="form-block__item">
+													<label class="form-block__label">Допомога</label>
+													<div class="form-block__body">
+														<div class="form-block__num">+</div>
+														<button type="button" class="form-block__btn btn-blue">Змінити</button>
 													</div>
 												</div>
 											</div>
@@ -289,8 +297,63 @@
 											<div class="form-block__2-cols">
 												<div class="form-block__item">
 													<label class="form-block__label">Назва курсу</label>
-													<div class="form-block__field">
-														<input autocomplete="off" type="text" name="name" placeholder="" class="form-block__input">
+													<div class="form-block__checkboxes">
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="1" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																Фото
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="2" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																Розмір футболки
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="3" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																ПІБ українською
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="4" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																Розмір пайти
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="5" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																ПІБ англійською
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="6" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																Резюме
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="7" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																Дата народження
+															</span>
+														</label>
+														<label class="checkbox">
+															<input class="checkbox__input" type="checkbox" value="8" name="form[]">
+															<span class="checkbox__label"></span>
+															<span class="checkbox__text">
+																Ролі
+															</span>
+														</label>
 													</div>
 												</div>
 												<div class="form-block__item">
@@ -354,7 +417,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250508122151"></script>
+	<script src="js/app.min.js?_v=20250612122600"></script>
 </body>
 
 </html>
