@@ -3110,16 +3110,17 @@ body::after {
 }
 .help-category__row {
   display: grid;
-  grid-template-columns: minmax(0,25.4375rem) 1fr 1fr
+  grid-template-columns: minmax(0,31.25rem) 1fr 1fr
 }
 .help-category__item .form-block__field {
   margin-left: auto;
-  max-width: 10rem
+  max-width: 10rem;
+  width: 100%
 }
 .help-category__item-body {
-  display: flex;
+  display: grid;
   align-items: center;
-  flex-wrap: wrap;
+  grid-template-columns: 3fr 10rem 1fr;
   gap: .9375rem
 }
 .help-category__item-row {
@@ -3156,12 +3157,15 @@ body::after {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
-  max-width: 28.125rem;
+  max-width: 34.375rem;
   width: 100%;
   margin-left: auto;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 144%
+}
+.help-category__expectations {
+  min-width: 10rem
 }
 .help-category__real {
   min-width: 10rem
