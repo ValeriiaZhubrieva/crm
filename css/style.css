@@ -2026,6 +2026,25 @@ body::after {
   background-color: #fff;
   box-shadow: 0 26px 50px 0 rgba(0,0,0,.1)
 }
+.user-card__status {
+  width: .625rem;
+  height: .625rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px
+}
+.status-user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px
+}
+.status-user__btn {
+  min-height: 2.25rem;
+  padding: .5rem 1rem;
+  font-weight: 600;
+  color: #fff
+}
 .new-user__inner {
   max-width: 61.375rem;
   width: 100%;

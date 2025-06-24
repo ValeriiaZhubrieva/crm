@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250508122151">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250624190422">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,17 +133,18 @@
 										<option value="2">Pоль 2</option>
 										<option value="3">Pоль 3</option>
 									</select>
-									<div class="search-block">
-										<input autocomplete="off" type="text" name="name" placeholder="Пошук організацій" class="form-block__input">
-										<button type="button" class="search-block__btn">
-											<img src="img/search.svg" alt="search">
-										</button>
+									<div class="status-user">
+										<button type="button" class="status-user__btn" style="background-color: red;">Статус 1</button>
+										<button type="button" class="status-user__btn" style="background-color: orange;">Статус 2</button>
+										<button type="button" class="status-user__btn" style="background-color: green;">Статус 3</button>
+										<button type="button" class="status-user__btn" style="background-color: blue;">Статус 4</button>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="users__items">
 							<div class="user-card">
+								<div class="user-card__status" style="background-color: red;"></div>
 								<div class="user-card__actions">
 									<button type="button" class="user-card__btn">
 										<img src="img/handle.svg" alt="handle">
@@ -173,6 +174,7 @@
 								</div>
 							</div>
 							<div class="user-card">
+								<div class="user-card__status" style="background-color: orange;"></div>
 								<div class="user-card__actions">
 									<button type="button" class="user-card__btn">
 										<img src="img/handle.svg" alt="handle">
@@ -213,6 +215,7 @@
 								</div>
 							</div>
 							<div class="user-card">
+								<div class="user-card__status" style="background-color: green;"></div>
 								<div class="user-card__actions">
 									<button type="button" class="user-card__btn">
 										<img src="img/handle.svg" alt="handle">
@@ -242,6 +245,7 @@
 								</div>
 							</div>
 							<div class="user-card">
+								<div class="user-card__status" style="background-color: blue;"></div>
 								<div class="user-card__actions">
 									<button type="button" class="user-card__btn">
 										<img src="img/handle.svg" alt="handle">
@@ -592,7 +596,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250508122151"></script>
+	<script src="js/app.min.js?_v=20250624190422"></script>
 </body>
 
 </html>
