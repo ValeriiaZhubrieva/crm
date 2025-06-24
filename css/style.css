@@ -2027,8 +2027,8 @@ body::after {
   box-shadow: 0 26px 50px 0 rgba(0,0,0,.1)
 }
 .user-card__status {
-  width: .625rem;
-  height: .625rem;
+  width: 1.8125rem;
+  height: 1.8125rem;
   border-radius: 50%;
   position: absolute;
   bottom: 5px;
