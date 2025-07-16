@@ -909,6 +909,12 @@ body {
   background: var(--light-grey);
   color: var(--black)
 }
+.form-block__select option[value=""] {
+  color: var(--grey)
+}
+.form-block__select:has(option:checked:not([value=""])) {
+  color: var(--black)
+}
 .form-block__select:focus {
   background-color: #fff
 }
